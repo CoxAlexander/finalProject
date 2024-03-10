@@ -90,13 +90,16 @@ def main():
     hangmanImg = tk.PhotoImage(file='final project/images/hangman.png')
     hangman=Label(window, image=hangmanImg)
     hangman.grid(row=6,column=0, padx=50)       #shows the base image for hangman
-    dashImageRef=[]             
+    hangmanLabel=Label(window,text="The hanging man")
+    hangmanLabel.grid(row=7,column=0)
+    dashImageRef=[] 
+                
   
     
     
 
     quit = tk.Button(window, text='Quit', width=10, command=(window.destroy))    #defines the buttons
-    quit.grid(row = 7, column = 0, pady = 100)                                  #creates the buttons
+    quit.grid(row = 7, column = 1, pady = 100)                                  #creates the buttons
     for x in range(length):                                                          #makes the blank images appear  
         dashimage = tk.PhotoImage(file='final project/images/dash.png')
         blankimg=Label(window, image=dashimage)
